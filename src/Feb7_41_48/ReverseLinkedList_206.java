@@ -6,18 +6,14 @@ package Feb7_41_48;
 public class ReverseLinkedList_206 {
     //recursive
     public ListNode reverseList(ListNode head) {
-        ListNode haha = new ListNode(0);
-
-    }
-
-    public ListNode helper(ListNode head, ListNode haha) {
-
-    }
-
-    public ListNode rever_Iterative(ListNode head) {
-        ListNode res;
+        ListNode newHead = null;
         while (head != null) {
-            res=head.
+            ListNode temp = head.next;
+            head.next=newHead;
+            newHead=head;
+            head = temp;
         }
+        return newHead;
+
     }
 }
