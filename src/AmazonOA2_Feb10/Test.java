@@ -1,3 +1,5 @@
+package AmazonOA2_Feb10;
+
 public class Test{
 	public static void main(String[] args){
 		ListNode head=new ListNode(0);
@@ -39,10 +41,11 @@ public class Test{
 	}
 }
 
+/*
 class ListNode{
 	int val;
 	ListNode next;
 	ListNode(int val){
 		this.val=val;
 	}
-}
+}*/
