@@ -1,0 +1,111 @@
+void insert(String key, String value);
+String search(String key);
+String delete(String key);
+
+
+If a Graph has V vertices and E edges. What is the time complexity of BFS in terms of V, E
+O(V+E)
+
+AABBCC -> BBCCAA
+[]
+
+AABBCC -> AABBCB -> AABBBB
+[AABBCB, AABBCC,AABBBB]
+
+AABBCC
+3*k
+.size()
+n
+
+AABBCC : What is the total number of combinations that you can generate by interchanging a letter. That will give you number of nodes(V) in the graph
+
+V: 3^k
+0(3^k);
+
+int minTransformations(String startWord, String endWord, HashSet<String> validTransformationStrings) {
+    if (validTransformationString == null){
+        return -1;
+    }
+    
+    if (startWord.equals(endWord)){
+        return 0;
+    }
+    
+    validTransformationString.add(startWord);
+    validTransformationString.add(endWord);
+    
+    Queue<String> queue = new LinkedList<String>();
+    HashSet<String> hash = new HashSet<String>();
+    
+    queue.offer(startWord);
+    hash.add(startWord);
+    
+    
+    int pathLen = 0;
+    whiel (!q.isEmpty()){
+        pathLen++;
+        int size = queue.size();
+      //  for (int i = 0; i < size; i++){
+            String word = queue.poll();
+            // O(k)
+            for (String nextWord : getNext(word, validTransformationString)){
+                if (hash.contains(nextWord)){
+                    continue;
+                }
+                if (nextWord.equals(end)){
+                    return pathLen;
+                }
+                hash.add(nextWord);
+                queue.offer(nextWord);
+            }
+      //  }
+    }
+    
+    return -1;
+}
+
+
+private String replace(String startWord, int index, char c){
+    // word.length() == k
+    // O(k)
+    char[] chars = s.toCharArray();
+    chars[index] = c;
+    return new String(chars);
+}
+
+private ArrayList<String> getNext(String word, HashSet<String> validTransformationString){
+    //O(k)
+    ArrayList<String> nextWords = new ArrayList<String>();
+    // O(1)*3 = O(1)
+    for (char c = 'A'; c <= 'C'; c++){
+        // O(k)
+        for (int i = 0; i < word.length(); i++){
+            if (c == word.charAt(i)){
+                continue;
+            }
+            String next = replace(word, i, c);
+            if(validTransformationString.contains(next)){
+                nextWords.add(next);
+            }
+        }
+    }
+    
+    return nextWords;
+}
+
+
+
+hashtable, BST, unordered map, balanced BST
+
+LC 17 原題
+
+project: When you did not have enough information when you get the requirement, how did you solve that?
+
+dict:  int parseTo real english word, which data structure?    hastset trie  time Complexity?
+
+3 sum,   follow up: with hashmap?
+
+LC 155  O(1)space
+
+
+
