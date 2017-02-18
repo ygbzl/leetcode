@@ -267,3 +267,56 @@ public ListNode swap(ListNode head, int k) {
  bst kth largest element
 
  lc116，follow up1 order traversal，follow up2 优化treenode class interface，然后问了two sum，follow up1 不sort，follow up2 不用map
+
+ 给一个每行都是的数字的文件的文件名， 求这些数字的和， follow up: 如果文件超过最大内存 
+
+
+ Me:
+给了一个文件名格式：p_{project_name}_{company_name}.{ext} ， 找出：project_name=beta, company={google, Amazon}, ext={h,txt}的所有文件，只能用linux语句来完成。
+问一下这个怎么写啊。。。
+Me:
+awk '$1 ~/^beta_(google|Amazon)\.(h|txt)$/' filenames  这样不知道可不可以   如果已经有文件名都存在一个file里的话
+
+面经：proud project; 题：Given a array Array[0, n-1], find an efficient way to answer query Gcd Query(l, r). where l >=0 and l<=n-1, r>=l and r<=n-1.
+
+给一个array和target找到subarray的和等于target  lc325
+word ladder2
+
+
+面经  merge k sorted list，但我答得好差。情景是什么amazon每个服务器的search结果，说要返回给用户。
+就是说亚麻油很多服务器，搜索都能得到独立的结果，问如何返回这些结果给用户。你就跟他探讨到底想给用户返回啥，得到的数据是啥样的，最后慢慢就讨论到合并list了
+
+
+
+报个面经：给List<String> exceptions, 输出每个分钟出现多少次SomeException, 没有的不算，Mon 2/16/2017 10:15 [ERROR] SomeException
+Mon 2/16/2017 10:15 [ERROR] SomeException
+Mon 2/16/2017 10:16 [INFO] No problems
+Mon 2/16/2017 10:20 [ERROR] SomeException
+Mon 2/16/2017 10:30 [ERROR] SomeException
+Mon 2/16/2017 10:30 [ERROR] AnotherException
+Mon 2/16/2017 10:16 [WARN] OtherException
+
+15 -> 2
+20 -> 1
+30 -> 1
+
+
+
+
+报一个（可能没什么帮助）面经：two sum和merge sort 前十分钟问了java基础问题 各种list map set的implementation 区别 什么时候用哪种和time complexity 求好运
+
+
+第一题 逐层打印Tree
+第二题 处理亚马逊员工数据
+
+
+lc 150
+
+fisher shuffle
+
+lc204
+
+给一个String array， 查找某个string，  改成binary search，
+
+给一个hour minute 输出夹角
+vector 和 arraylist有什么区别
