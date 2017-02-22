@@ -320,3 +320,46 @@ lc204
 
 给一个hour minute 输出夹角
 vector 和 arraylist有什么区别
+
+
+1.array 里找 duplicate
+2. valid phone number lc 193
+3. 给一个startlist，找100个最接近地球的start
+
+LC 287
+
+LC 242 
+
+lc 193 242 287
+
+面经: input: abc, output: a,b,c,ab,ac,bc,abc，没有顺序要求，即ab和ba是一样的
+
+top k frequent elements
+
+
+Permitations of strings
+construct heap
+
+面经：
+Behavior question： 
+说一个你最喜欢的project
+当你朋友遇到困难的时候，你是怎么帮助他的
+说一个你曾经遇到过的时间很紧的project，你是如何解决的
+Coding:
+什么时候用set，set有哪些function，然后implement a set with the functions
+
+
+给一个array 找出里面出现奇数次的数字。我先用hashmap, 后来用int[],最后小哥说 no extra space
+
+一个数出现odd times 其他even times 找这个数 实现2种方法
+
+integer换成ojbect,所以不能用异或。 这种用hashCode用什么才能no extra space?
+
+
+
+
+面经：面的基本和@老姐的1号迷弟 一样…只不过又问了find and replace phone number in 100000 web pages，没让写，然后还有一个detect linked list cycle 讲了下也没写，然后一些data structure
+
+
+
+我也报个面筋： 问了project。然后如何向一个beginner解释OOP。然后题：有duplicate的2sum，先用了hashtable，后来说不用的话怎么做。问了complexity。 然后design elevator，说了说思路，不用写
