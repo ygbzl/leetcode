@@ -5,7 +5,6 @@ package Feb11_49_56;
  */
 public class ReverseWordsInAString_151 {
     public String reverseWords(String s) {
-        char[] array = s.toCharArray();
+123
 
-    }
 }
