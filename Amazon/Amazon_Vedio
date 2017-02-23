@@ -363,3 +363,19 @@ integer换成ojbect,所以不能用异或。 这种用hashCode用什么才能no 
 
 
 我也报个面筋： 问了project。然后如何向一个beginner解释OOP。然后题：有duplicate的2sum，先用了hashtable，后来说不用的话怎么做。问了complexity。 然后design elevator，说了说思路，不用写
+
+
+lc 91
+
+刚面完三哥。三道题 1print all the possible strings of length k that can be found in a given set of characters 2 Remove duplicate node in a linked list 3 Design Twitter 
+
+
+设计一个有序集合  1.boolean insert(element)   2. boolean romove(element) 3.boolean contains(element) 4. []element toList()
+
+
+
+Given the heads of two linked lists, return a new list that contains nodes with all the values that appear in both lists.
+follow up 是 如果sorted 能不能优化
+
+
+新鲜面经，ispalindrome, first unique character
