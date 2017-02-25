@@ -9,5 +9,19 @@ package Feb22_65_72;
  * Created by zhupd on 2/22/2017.
  */
 public class ProductOfArrayExceptSelf_238 {
+    public int[] productExceptSelf(int[] nums) {
+        int len=nums.length;
+        int[] res = new int[len];
+        for(int i=0,temp=1;i<len;i++) {
+            res[i]=temp;
+            temp = temp * nums[i];
+        }
+        int temp=1;
+        for (int i = len - 1; i >= 0; i--) {
+            res[i] = res[i] * temp;
+            temp *= nums[i];
+        }
+        return res;
 
+    }
 }
